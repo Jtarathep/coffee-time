@@ -59,6 +59,11 @@ const MENU = [
   },
 ]
 
+const DEVELOPERS = [
+  'Tarathep Punyakong',
+  'Rattaphum Kamsantia',
+]
+
 function App() {
   const [orderedId, setOrderedId] = useState(null)
   const [message, setMessage] = useState('')
@@ -91,7 +96,7 @@ function App() {
           }}
         >
           <span className="brand-icon">☕</span>
-          <span>COFEE TIME</span>
+          <span>COFFEE TIME</span>
         </a>
 
         <nav className="navigation" aria-label="เมนูหลัก">
@@ -124,7 +129,7 @@ function App() {
               ☕
             </span>
 
-            <p className="hero-eyebrow">WELCOME TO COFEE TIME</p>
+            <p className="hero-eyebrow">WELCOME TO COFFEE TIME</p>
 
             <h1>ร้านกาแฟ</h1>
 
@@ -209,13 +214,22 @@ function App() {
             scrollToSection('home')
           }}
         >
-          ☕ COFEE TIME
+          ☕ COFFEE TIME
         </a>
 
         <p>Fresh Coffee Everyday</p>
 
+        <div className="developer-credit">
+          <p className="developer-heading">Developed by</p>
+          <ul>
+            {DEVELOPERS.map((developer) => (
+              <li key={developer}>{developer}</li>
+            ))}
+          </ul>
+        </div>
+
         <p className="copyright">
-          © 2026 COFEE TIME. All rights reserved.
+          © 2026 COFFEE TIME. All rights reserved.
         </p>
       </footer>
 

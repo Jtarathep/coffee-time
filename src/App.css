@@ -459,3 +459,28 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Developer credits */
+.developer-credit {
+  margin: 24px 0 16px;
+  text-align: center;
+}
+
+.developer-heading {
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.developer-credit ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.developer-credit li {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
