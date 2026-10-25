@@ -1,16 +1,90 @@
-# React + Vite
+# COFFEE TIME ☕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+เว็บไซต์แนะนำร้านกาแฟ COFFEE TIME พัฒนาด้วย React และ Vite ออกแบบมาเพื่อแสดงข้อมูลร้าน เมนูเครื่องดื่ม ราคา และช่องทางให้ผู้ใช้ทดลองกดสั่งซื้อผ่านหน้าเว็บไซต์
 
-Currently, two official plugins are available:
+## รายละเอียดโครงงาน
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **ชื่อโครงงาน:** COFFEE TIME
+- **ประเภท:** เว็บไซต์แนะนำร้านกาแฟ
+- **วัตถุประสงค์:** เพื่อฝึกพัฒนาเว็บไซต์ด้วย React และสร้างส่วนติดต่อผู้ใช้สำหรับร้านกาแฟ
+- **Frontend:** React
+- **เครื่องมือพัฒนา:** Vite
+- **ภาษา:** JavaScript และ CSS
 
-## React Compiler
+## ฟังก์ชันการทำงาน
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. แสดงหน้าแรกและข้อมูลแนะนำร้านกาแฟ
+2. แสดงเมนูเครื่องดื่ม 6 รายการ พร้อมรูปภาพ ชื่อ รายละเอียด และราคา
+3. เลื่อนหน้าจอไปยังส่วนเมนูผ่านแถบนำทางและปุ่มดูเมนู
+4. ทดลองกดปุ่มสั่งซื้อและแสดงข้อความยืนยันบนหน้าเว็บไซต์
+5. แสดงรายชื่อผู้พัฒนาในส่วนท้ายเว็บไซต์
+6. รองรับการแสดงผลบนหน้าจอขนาดต่าง ๆ
 
-## Expanding the ESLint configuration
+**หมายเหตุ:** ปุ่มสั่งซื้อเป็นการจำลองการทำงานบนหน้าเว็บไซต์ ยังไม่มีระบบตะกร้าสินค้า ฐานข้อมูล ระบบชำระเงิน หรือการบันทึกคำสั่งซื้อจริง
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## เทคโนโลยีที่ใช้
+
+- React — สร้างส่วนติดต่อผู้ใช้
+- Vite — เครื่องมือสำหรับพัฒนาและ Build เว็บไซต์
+- JavaScript — จัดการการทำงานของหน้าเว็บ
+- CSS — จัดรูปแบบและการแสดงผล
+- Unsplash — แหล่งรูปภาพเครื่องดื่มที่ใช้ผ่าน URL
+
+## สิ่งที่ต้องติดตั้งก่อนใช้งาน
+
+1. Node.js รุ่นที่รองรับ Vite
+2. โปรแกรม Visual Studio Code (แนะนำ)
+3. เว็บเบราว์เซอร์ เช่น Google Chrome
+
+## วิธีติดตั้งและเปิดใช้งาน
+
+### 1. แตกไฟล์โครงงาน
+
+แตกไฟล์ `coffee-time.zip` ไปยังโฟลเดอร์ที่ต้องการ
+
+### 2. เปิดโฟลเดอร์ใน Visual Studio Code
+
+เปิดโฟลเดอร์ `coffee-time` จากนั้นเลือกเมนู Terminal → New Terminal
+
+### 3. ติดตั้ง Dependencies
+
+บน Windows PowerShell ใช้คำสั่ง:
+
+```powershell
+npm.cmd install
+```
+
+### 4. เริ่มต้นเว็บไซต์
+
+```powershell
+npm.cmd run dev
+```
+
+### 5. เปิดเว็บไซต์
+
+เปิด URL ที่แสดงใน Terminal โดยทั่วไปคือ:
+
+http://localhost:5173/
+
+หากพอร์ต 5173 ถูกใช้งานอยู่ Vite อาจแสดง URL พอร์ตอื่น ให้เปิดตาม URL ที่แสดงจริง
+
+## คำสั่งสำหรับตรวจสอบโครงงาน
+
+ตรวจสอบการ Build:
+
+```powershell
+npm.cmd run build
+```
+
+ตรวจสอบโค้ดด้วย ESLint:
+
+```powershell
+npm.cmd run lint
+```
+
+## ผู้พัฒนา
+
+- Tarathep Punyakong
+- Rattaphum Kamsantia
+
+© 2026 COFFEE TIME
